@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btnUndo"
+        android:title="↪️"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btnRedo"
+        android:title="🔄"
+        app:showAsAction="always" />
+    
+<item
+    android:id="@+id/action_search"
+    android:title="🔎 Search"
+    android:icon="@android:drawable/ic_menu_search"
+    app:showAsAction="ifRoom|collapseActionView"
+    app:actionLayout="@layout/search_with_counter" />
+
+<item
+    android:id="@+id/action_search_prev"
+    android:title="⏮️"
+    app:showAsAction="always" />
+
+<item
+    android:id="@+id/action_search_next"
+    android:title="⏭️"
+    app:showAsAction="always" />
+
+    
+    <item
+        android:id="@+id/menu_open"
+        android:title="Open File"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_save"
+        android:title="Save"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_save_as"
+        android:title="Save As..."
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_install_module"
+        android:title="Install Module"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_list_modules"
+        android:title="List Modules"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never" />
+        
+     <item
+        android:id="@+id/openSora"
+        android:title="Open Sora"
+        app:showAsAction="never" />
+</menu>

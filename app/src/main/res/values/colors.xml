@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 color system -->
+    <color name="m3_sys_color_primary">#6750A4</color>
+    <color name="m3_sys_color_on_primary">#FFFFFF</color>
+    <color name="m3_sys_color_primary_container">#EADDFF</color>
+    <color name="m3_sys_color_on_primary_container">#21005D</color>
+    <color name="m3_sys_color_secondary">#625B71</color>
+    <color name="m3_sys_color_on_secondary">#FFFFFF</color>
+    <color name="m3_sys_color_secondary_container">#E8DEF8</color>
+    <color name="m3_sys_color_on_secondary_container">#1D192B</color>
+    <color name="m3_sys_color_secondary_fixed">#E8DEF8</color>
+</resources>

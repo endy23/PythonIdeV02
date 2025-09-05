@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <com.amrdeveloper.codeview.CodeView
+        android:id="@+id/codeEditor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:background="@drawable/editor_background"
+        android:fontFamily="monospace"
+        android:padding="8dp" 
+        android:textSize="12dp"
+    />
+
+    <Button
+        android:id="@+id/runButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run Code"
+        android:layout_gravity="center" />
+        
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_margin="16dp"
+        android:id="@+id/outputScrollView"
+        >
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#EEEEEE"
+            android:padding="8dp"
+            android:text="Output will appear here"
+            android:textIsSelectable="true"
+        
+        />
+    </ScrollView>
+    <LinearLayout
+    android:id="@+id/keyboardBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#222">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTab"
+                android:text="Tab"
+                style="@style/KeyboardBarButton" />
+
+            <Button
+                android:id="@+id/btnQuote"
+                android:text='"'
+                style="@style/KeyboardBarButton" />
+
+            <Button
+                android:id="@+id/btnApostrophe"
+                android:text="'"
+                style="@style/KeyboardBarButton" />
+
+            <Button
+                android:id="@+id/btnColon"
+                android:text=":"
+                style="@style/KeyboardBarButton" />
+
+            <Button
+                android:id="@+id/btnOpenParen"
+                android:text="("
+                style="@style/KeyboardBarButton" />
+
+            <Button
+                android:id="@+id/btnCloseParen"
+                android:text=")"
+                style="@style/KeyboardBarButton" />
+
+            <Button
+                android:id="@+id/btnHash"
+                android:text="#"
+                style="@style/KeyboardBarButton" />
+
+            <Button
+                android:id="@+id/btnAt"
+                android:text="@"
+                style="@style/KeyboardBarButton" />
+
+            <Button
+                android:id="@+id/btnDollar"
+                android:text="$"
+                style="@style/KeyboardBarButton" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
+</LinearLayout>

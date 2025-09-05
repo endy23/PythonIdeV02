@@ -1,0 +1,68 @@
+{
+  "scopeName": "source.python",
+  "name": "Python",
+  "patterns": [
+    { "include": "#comment" },
+    { "include": "#string" },
+    { "include": "#number" },
+    { "include": "#keyword" },
+    { "include": "#function" },
+    { "include": "#variable" }
+  ],
+  "repository": {
+    "comment": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.python",
+          "match": "#.*$"
+        }
+      ]
+    },
+    "string": {
+      "patterns": [
+        {
+          "name": "string.quoted.single.python",
+          "begin": "'",
+          "end": "'"
+        },
+        {
+          "name": "string.quoted.double.python",
+          "begin": "\"",
+          "end": "\""
+        }
+      ]
+    },
+    "number": {
+      "patterns": [
+        {
+          "name": "constant.numeric.python",
+          "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+        }
+      ]
+    },
+    "keyword": {
+      "patterns": [
+        {
+          "name": "keyword.control.python",
+          "match": "\\b(if|else|elif|for|while|return|def|class|import|from|as|pass|break|continue|in|is|and|or|not|with|lambda|try|except|finally|raise|yield|global|nonlocal|assert|del)\\b"
+        }
+      ]
+    },
+    "function": {
+      "patterns": [
+        {
+          "name": "entity.name.function.python",
+          "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=\\()"
+        }
+      ]
+    },
+    "variable": {
+      "patterns": [
+        {
+          "name": "variable.other.python",
+          "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        }
+      ]
+    }
+  }
+}

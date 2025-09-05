@@ -1,0 +1,50 @@
+{
+  "name": "Quiet Light",
+  "type": "light",
+  "colors": {
+    "editor.background": "#F5F5F5",
+    "editor.foreground": "#333333",
+    "editorCursor.foreground": "#000000",
+    "editor.lineHighlightBackground": "#EAEAEA",
+    "editorLineNumber.foreground": "#999999",
+    "editor.selectionBackground": "#B3D4FC",
+    "editor.inactiveSelectionBackground": "#D7E8FD"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": { "foreground": "#008000" }
+    },
+    {
+      "scope": ["string", "constant.other.symbol"],
+      "settings": { "foreground": "#A31515" }
+    },
+    {
+      "scope": ["keyword", "storage.type", "storage.modifier"],
+      "settings": { "foreground": "#0000FF" }
+    },
+    {
+      "scope": ["constant.numeric"],
+      "settings": { "foreground": "#09885A" }
+    },
+    {
+      "scope": ["entity.name.function", "support.function"],
+      "settings": { "foreground": "#795E26" }
+    },
+    {
+      "scope": ["variable", "entity.name.variable"],
+      "settings": { "foreground": "#001080" }
+    }
+  ],
+  "semanticTokenColors": {
+    "variable": "#001080",
+    "parameter": "#001080",
+    "property": "#001080",
+    "function": "#795E26",
+    "method": "#795E26",
+    "numberLiteral": "#09885A",
+    "stringLiteral": "#A31515",
+    "keyword": "#0000FF",
+    "comment": "#008000"
+  }
+}
