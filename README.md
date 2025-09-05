@@ -99,20 +99,15 @@ Chaquopy for Python runtime
 
 ---
 
-📸 Screenshots (example placeholders)
-
-Editor	Output Console
-
-	
-
-
-
 ---
 
-📜 License
+❤️ Support & Donations
 
-MIT License.
-Feel free to fork and modify!
+If you like this project and want to support further development, you can donate Solana(SOL), Bitcoin(BTC) or Ethereum (ETH):
 
+💳 Solana Address:
+d5L3ihSWp8EDTVmeFFWFVgibpcS4snUBc5WrBxDp2sb
 
----
+💳 Bitcoin Address: bc1qm664xtdn7ehr6r6tfp4ye8g7mfka5afhwqsun8
+
+💳 Ethereum Address: 0x5fcfB93Bf2D06F9E339D26D557Fb39663b54e7D7
