@@ -163,7 +163,7 @@ private fun setupMinimalEditor() {
             ThemeRegistry.getInstance().apply { setTheme("dark") },
             true
         ))
-        setText("def test():\n    print('Hello')")
+        setText("def test():\n    print('Hello')\n")
     }
 }
 
