@@ -27,6 +27,8 @@ import android.text.style.BackgroundColorSpan
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.SpannableStringBuilder
+import android.view.Menu
+import android.view.MenuItem
 
 
 class TestActivity : AppCompatActivity() {
@@ -787,5 +789,5 @@ class TestActivity : AppCompatActivity() {
     }
 }
 
-data class EditorState(val text: String, val cursorPosition: Int)
+//data class EditorState(val text: String, val cursorPosition: Int)
 

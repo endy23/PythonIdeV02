@@ -26,6 +26,8 @@ import android.graphics.Rect
 import androidx.core.view.isVisible
 import android.view.animation.TranslateAnimation
 
+data class EditorState(val text: String, val cursorPosition: Int)
+
 class SoraActivity : AppCompatActivity() {
 
     private lateinit var editor: CodeEditor

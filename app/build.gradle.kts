@@ -94,8 +94,12 @@ dependencies {
     //implementation("io.github.Rosemoe.sora-editor:editor:0.21.1")
     //implementation("io.github.Rosemoe.sora-editor:language-textmate:0.21.1")
     
+  //  implementation(platform("io.github.rosemoe:editor-bom:0.23.7"))
+  //  implementation("io.github.rosemoe:editor")
+  //  implementation("io.github.rosemoe:language-textmate")
+
     implementation("io.github.Rosemoe.sora-editor:editor:0.22.0")
-    implementation("io.github.Rosemoe.sora-editor:language-textmate:0.22.0") // ✅ REQUIRED for .textmate.*
+    implementation("io.github.Rosemoe.sora-editor:language-textmate:0.22.0")
 
 
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
