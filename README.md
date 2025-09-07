@@ -1,6 +1,3 @@
-
----
-
 🐍 PythonIDEv02 (Android Python IDE)
 
 An Android-based Python IDE built with Sora CodeEditor and Chaquopy, providing syntax highlighting, a built-in Python runtime, and a lightweight coding environment directly on your phone.
@@ -105,9 +102,12 @@ Chaquopy for Python runtime
 
 If you like this project and want to support further development, you can donate Solana(SOL), Bitcoin(BTC) or Ethereum (ETH):
 
-💳 Solana Address:
+[![SOL]([https://solana.org/](https://solana.org/_next/static/media/logo.2e4a7507.svg))]Solana Address:
 d5L3ihSWp8EDTVmeFFWFVgibpcS4snUBc5WrBxDp2sb
 
 💳 Bitcoin Address: bc1qm664xtdn7ehr6r6tfp4ye8g7mfka5afhwqsun8
 
 💳 Ethereum Address: 0x5fcfB93Bf2D06F9E339D26D557Fb39663b54e7D7
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID)
+
