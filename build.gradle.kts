@@ -26,6 +26,22 @@ tasks.register<Copy>("exportDebugApk") {
     rename("app-debug.apk", "PythonIdev02-debug.apk")
 }
 
+tasks.register<Exec>("pushToGitHub") {
+    group = "git"
+    description = "Commit and push changes to GitHub"
+
+    doFirst {
+        println("Committing and pushing changes to GitHub...")
+    }
+
+    // Adjust the commit message or branch name as you need
+    commandLine("sh", "-c", """
+        git add .
+        git commit -m "Auto commit from Gradle"
+        git push origin master
+    """.trimIndent())
+}
+
 // ✅ Hook both tasks so they run after assemble tasks
 //gradle.projectsEvaluated {
  //   tasks.named(":app:assembleRelease") {

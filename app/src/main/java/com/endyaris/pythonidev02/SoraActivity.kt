@@ -14,6 +14,7 @@ import io.github.rosemoe.sora.langs.textmate.registry.model.GrammarDefinition
 import io.github.rosemoe.sora.langs.textmate.registry.provider.AssetsFileResolver
 import io.github.rosemoe.sora.langs.textmate.registry.model.ThemeModel
 import org.eclipse.tm4e.core.registry.IThemeSource
+import io.github.rosemoe.sora.widget.component.EditorAutoCompletion
 import com.chaquo.python.Python
 import com.chaquo.python.android.AndroidPlatform
 import android.widget.TextView
@@ -99,6 +100,8 @@ popo(11)""")
         // 5) Set a TextMate language by its scope name (adjust to your language)
         val language = TextMateLanguage.create("source.python", /*enableCompletion*/ true)
         editor.setEditorLanguage(language)
+        editor.getComponent<EditorAutoCompletion>()
+                    .setEnabledAnimation(true)
     }
 
     private fun runCode() {
