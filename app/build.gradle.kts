@@ -111,6 +111,8 @@ dependencies {
     implementation("io.github.amrdeveloper:codeview:1.3.9") // Check for the latest version
     
     implementation("androidx.core:core-ktx:1.10.1") // ή την τελευταία έκδοση
+    
+    implementation("com.itsaky.androidide:logsender:2.7.1-beta")
 
 
 }

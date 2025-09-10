@@ -29,7 +29,9 @@ import android.text.SpannableString
 import android.text.SpannableStringBuilder
 import android.view.Menu
 import android.view.MenuItem
+import java.util.Deque
 
+data class EditorStates(val text: String, val cursorPosition: Int)
 
 class TestActivity : AppCompatActivity() {
 
@@ -41,8 +43,8 @@ class TestActivity : AppCompatActivity() {
     private val PREFS_NAME = "python_ide_prefs"
     private val CODE_KEY = "saved_code"
 
-    private val undoStack: Deque<EditorState> = ArrayDeque()
-    private val redoStack: Deque<EditorState> = ArrayDeque()
+    private val undoStack: Deque<EditorStates> = ArrayDeque()
+    private val redoStack: Deque<EditorStates> = ArrayDeque()
     private var isUndoOrRedo = false
 
     private var currentFileUri: Uri? = null
@@ -95,7 +97,7 @@ class TestActivity : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 if (!isUndoOrRedo) {
                     val cursorPos = codeEditor.selectionStart
-                    undoStack.addLast(EditorState(s.toString(), cursorPos))
+                    undoStack.addLast(EditorStates(s.toString(), cursorPos))
                     if (undoStack.size > 100) undoStack.removeFirst()
                     redoStack.clear()
                 }
@@ -385,7 +387,7 @@ class TestActivity : AppCompatActivity() {
 
     private fun undo() {
         if (undoStack.isNotEmpty()) {
-            val current = EditorState(codeEditor.text.toString(), codeEditor.selectionStart)
+            val current = EditorStates(codeEditor.text.toString(), codeEditor.selectionStart)
             redoStack.addLast(current)
             val state = undoStack.removeLast()
             isUndoOrRedo = true
@@ -397,7 +399,7 @@ class TestActivity : AppCompatActivity() {
 
     private fun redo() {
         if (redoStack.isNotEmpty()) {
-            val current = EditorState(codeEditor.text.toString(), codeEditor.selectionStart)
+            val current = EditorStates(codeEditor.text.toString(), codeEditor.selectionStart)
             undoStack.addLast(current)
             val state = redoStack.removeLast()
             isUndoOrRedo = true
