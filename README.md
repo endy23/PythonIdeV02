@@ -103,3 +103,7 @@ If you like this project and want to support further development, you can donate
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID)
 
+Revolut
+IBAN: LT49 3250 0575 7091 7424
+Andreas Aristopoulos
+
