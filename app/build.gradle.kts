@@ -80,6 +80,7 @@ chaquopy {
             install("lxml")
             install("pandas")
             install("Pillow")
+            install("scapy")
         }
     }
 }
